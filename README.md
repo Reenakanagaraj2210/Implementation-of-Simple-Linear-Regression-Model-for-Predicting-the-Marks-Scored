@@ -57,15 +57,6 @@ plt.title("Hours vs Scores(Training Set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
-```
-
-```
-plt.scatter(X_test, Y_test, color="blue")
-plt.plot(X_test, regressor.predict(X_test), color="green")
-plt.title('Testing set (Hours vs Scores)')
-plt.xlabel("Hours")
-plt.ylabel("Scores")
-plt.show()
 mae = mean_absolute_error(Y_test, Y_pred)
 mse = mean_squared_error(Y_test, Y_pred)
 rmse = np.sqrt(mse)
